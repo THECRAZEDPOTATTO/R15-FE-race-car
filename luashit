@@ -16,6 +16,11 @@ pcall(function()
            })
          setclipboard('https://discord.gg/aSxkYsQ9')
       end)
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local PlayerName = Instance.new("TextLabel")
@@ -37,7 +42,7 @@ PlayerName.Name = "PlayerName"
 PlayerName.Parent = Frame
 PlayerName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 PlayerName.BackgroundTransparency = 1.000
-PlayerName.Position = UDim2.new(0.29296875, 0, 0.257142901, 0)
+PlayerName.Position = UDim2.new(0.234375, 0, 0.0571428984, 0)
 PlayerName.Size = UDim2.new(0, 64, 0, 13)
 PlayerName.Font = Enum.Font.SourceSans
 PlayerName.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -46,13 +51,13 @@ PlayerName.TextSize = 14.000
 PlayerImage.Name = "PlayerImage"
 PlayerImage.Parent = Frame
 PlayerImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-PlayerImage.Position = UDim2.new(0, 0, -0.371428579, 0)
+PlayerImage.Position = UDim2.new(0, 0, -0.54285717, 0)
 PlayerImage.Size = UDim2.new(0, 47, 0, 35)
 PlayerImage.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
 
 -- Scripts:
 
-local function RYRY_fake_script() -- Frame.LocalScript 
+local function KSUYFUZ_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local frame = script.Parent
@@ -79,4 +84,4 @@ local function RYRY_fake_script() -- Frame.LocalScript
 	
 	frame.PlayerName.Text = player.Name
 end
-coroutine.wrap(RYRY_fake_script)()
+coroutine.wrap(KSUYFUZ_fake_script)()
