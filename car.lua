@@ -46,8 +46,6 @@ end
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
-local TextButton = Instance.new("TextButton")
-local TextButton_2 = Instance.new("TextButton")
 local TextLabel_2 = Instance.new("TextLabel")
 local ImageButton = Instance.new("ImageButton")
 local TextButton_3 = Instance.new("TextButton")
@@ -72,32 +70,12 @@ TextLabel.BorderSizePixel = 0
 TextLabel.Position = UDim2.new(0.104396239, 0, 0, 0)
 TextLabel.Size = UDim2.new(0, 187, 0, 50)
 TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "ExcuteD"
+TextLabel.Text = "R15 car"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextSize = 20.000
 TextLabel.TextStrokeTransparency = 0.990
 
-TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.BackgroundTransparency = 1.000
-TextButton.BorderSizePixel = 0
-TextButton.Position = UDim2.new(0.318014383, 0, 0.351093292, 0)
-TextButton.Size = UDim2.new(0, 85, 0, 23)
-TextButton.Font = Enum.Font.Oswald
-TextButton.Text = "See exploiters "
-TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.TextSize = 20.000
 
-TextButton_2.Parent = Frame
-TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_2.BackgroundTransparency = 1.000
-TextButton_2.BorderSizePixel = 0
-TextButton_2.Position = UDim2.new(0.318014383, 0, 0.556347847, 0)
-TextButton_2.Size = UDim2.new(0, 85, 0, 23)
-TextButton_2.Font = Enum.Font.Oswald
-TextButton_2.Text = "FInd macros users"
-TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_2.TextSize = 20.000
 
 TextLabel_2.Parent = Frame
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -181,7 +159,7 @@ local function OGTZK_fake_script() -- TextLabel_2.LocalScript
 		FrameUpdateTable[1] = LastIteration
 		local FPS = (math.floor(TimeFunction() - Start >= 1 and #FrameUpdateTable or #FrameUpdateTable / (TimeFunction() - Start)))
 		FpsLabel.Text = tostring(FPS) .. " FPS"
-		if FPS < 5 then
+		if FPS < 10 then
 			LocalPlayer:Kick("Exploit drop fps to much pc could not handel")
 		end
 	end
@@ -295,4 +273,6 @@ notifSound.SoundId = "rbxassetid://5491518316"
 notifSound.PlayOnRemove = true
 notifSound:Destroy()
 game.StarterGui:SetCore("SendNotification", {Title = "loaded", Text = "car script loaded press z to flip or x", Icon = "", Duration = 5, Button1 = "Okay"})
+game.StarterGui:SetCore("SendNotification", {Title = "credit", Text = "Made by Cow#3479/Thecrazedpotatto", Icon = "", Duration = 5, Button1 = "Okay"})
+
 
